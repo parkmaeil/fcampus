@@ -5,7 +5,11 @@ public class HelloJava {
 		// TODO Auto-generated method stub
 
         System.out.println("AAA");
+<<<<<<< HEAD
 
+=======
+        System.out.println("BBB");
+>>>>>>> refs/heads/AAA
 	}
 
 }
