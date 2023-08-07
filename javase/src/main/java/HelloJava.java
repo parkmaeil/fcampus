@@ -5,6 +5,7 @@ public class HelloJava {
 		// TODO Auto-generated method stub
         System.out.println("AAA");
         System.out.println("BBB");
+        System.out.println("CCC");
 	}
 
 }
