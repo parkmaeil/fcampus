@@ -1,4 +1,4 @@
-# 책 검색 및 데이터베이스 저장 프로그램
+# Open API를 이용하여 책 검색 및 데이터베이스 저장 프로그램 자바 애플리케이션 개발
 
 이 프로그램은 Kakao Book Open API를 활용하여 책을 검색하고, 검색한 책 데이터를 데이터베이스에 저장하는 기능을 제공합니다.
 
@@ -8,15 +8,21 @@
 
 1. [Kakao Developers](https://developers.kakao.com)에 로그인합니다.
 
-2. 로그인 후, [시작 가이드](https://developers.kakao.com/docs/latest/en/getting-started/app)에 따라 자신만의 애플리케이션을 생성합니다.
+2. 로그인 후, [시작 가이드](https://developers.kakao.com/docs/latest/ko/getting-started/app)에 따라 자신만의 애플리케이션을 생성합니다.
 
 3. 애플리케이션 생성 시, 각 플랫폼별로 앱 키가 발급됩니다. 나중 사용을 위해 REST API 키를 메모해두세요.
 
 ### 단계 2: 책 검색 API 사용
 
-1. [다음 검색 REST API 문서](https://developers.kakao.com/docs/latest/en/daum-search/dev-guide)를 참고하여 책 검색 REST API를 확인합니다.
+1. [다음 검색 REST API 문서](https://developers.kakao.com/docs/latest/ko/daum-search/dev-guide)를 참고하여 책 검색 REST API를 확인합니다.
 
 2. 문서에서 제공된 책 검색 예제 코드를 확인하여 요청과 응답 구조를 이해합니다.
+
+**요청:**
+```bash
+curl -v -X GET "https://dapi.kakao.com/v3/search/book?target=title" \
+--data-urlencode "query=courage to be hated" \
+-H "Authorization: KakaoAK ${REST_API_KEY}"
 
 ### 단계 3: Java 애플리케이션 구현
 
