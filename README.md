@@ -18,12 +18,6 @@
 
 2. 문서에서 제공된 책 검색 예제 코드를 확인하여 요청과 응답 구조를 이해합니다.
 
-[요청]
-
-curl -v -X GET "https://dapi.kakao.com/v3/search/book?target=title" \
---data-urlencode "query=courage to be hated" \
--H "Authorization: KakaoAK ${REST_API_KEY}"
-
 ### 단계 3: Java 애플리케이션 구현
 
 1. Kakao Book Open API와 상호작용하는 Java 애플리케이션을 설계합니다.
@@ -32,7 +26,7 @@ curl -v -X GET "https://dapi.kakao.com/v3/search/book?target=title" \
 
 3. 검색한 책에 관한 정보를 제목, 가격, 출판사, 저자, 할인 가격 및 ISBN과 같이 적절한 정보로 출력합니다.
 
-## 입력 및 출력 예시
+### 입력 및 출력 예시
 
 ### 입력 화면
 
@@ -42,7 +36,7 @@ curl -v -X GET "https://dapi.kakao.com/v3/search/book?target=title" \
 
 | 도서 제목           | 가격   | 출판사            | 작가              | 할인 가격      | ISBN       |
 |---------------------|--------|-------------------|------------------|----------------|------------|
-| 자바의 표준          | 30000  | 돌 남궁성         | 26000             | 98210011       |            |
+| 자바의 표준          | 30000  | 도울               | 남궁성            |   26000       |  98210011  |
 | ...                 |        |                  |                   |                |            |
 
 데이터베이스에 저장하시겠습니까? Y/N
