@@ -18,8 +18,7 @@
 
 2. 문서에서 제공된 책 검색 예제 코드를 확인하여 요청과 응답 구조를 이해합니다.
 
-**요청:**
-```bash
+[요청]
 curl -v -X GET "https://dapi.kakao.com/v3/search/book?target=title" \
 --data-urlencode "query=courage to be hated" \
 -H "Authorization: KakaoAK ${REST_API_KEY}"
